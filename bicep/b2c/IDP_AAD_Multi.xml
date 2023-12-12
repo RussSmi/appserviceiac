@@ -32,14 +32,15 @@
         <Key Id='client_secret' StorageReferenceId='B2C_1A_AADAppSecret'/>
       </CryptographicKeys>
       <OutputClaims>
-        <OutputClaim ClaimTypeReferenceId='issuerUserId' PartnerClaimType='oid'/>
-        <OutputClaim ClaimTypeReferenceId='tenantId' PartnerClaimType='tid'/>
-        <OutputClaim ClaimTypeReferenceId='givenName' PartnerClaimType='given_name' />
-        <OutputClaim ClaimTypeReferenceId='surName' PartnerClaimType='family_name' />
-        <OutputClaim ClaimTypeReferenceId='signInNames.emailAddress' PartnerClaimType='email' />
-        <OutputClaim ClaimTypeReferenceId='displayName' PartnerClaimType='name' />
-        <OutputClaim ClaimTypeReferenceId='authenticationSource' DefaultValue='socialIdpAuthentication' AlwaysUseDefaultValue='true' />
-        <OutputClaim ClaimTypeReferenceId='identityProvider' PartnerClaimType='iss' />
+        <OutputClaim ClaimTypeReferenceId="issuerUserId" PartnerClaimType="oid" />
+        <OutputClaim ClaimTypeReferenceId="tenantId" PartnerClaimType="tid" />
+        <OutputClaim ClaimTypeReferenceId="givenName" PartnerClaimType="given_name" />
+        <OutputClaim ClaimTypeReferenceId="surName" PartnerClaimType="family_name" />
+        <OutputClaim ClaimTypeReferenceId="email" PartnerClaimType="email" />
+        <OutputClaim ClaimTypeReferenceId="displayName" PartnerClaimType="name" />
+        <OutputClaim ClaimTypeReferenceId="authenticationSource" DefaultValue="socialIdpAuthentication" AlwaysUseDefaultValue="true" />
+        <OutputClaim ClaimTypeReferenceId="identityProvider" PartnerClaimType="iss" />
+        <OutputClaim ClaimTypeReferenceId="otherMails" PartnerClaimType="emails" />
       </OutputClaims>
       <OutputClaimsTransformations>
         <OutputClaimsTransformation ReferenceId='CreateRandomUPNUserName'/>
@@ -133,13 +134,14 @@
       <DisplayName>PolicyProfile</DisplayName>
       <Protocol Name='OpenIdConnect' />
       <OutputClaims>
-        <OutputClaim ClaimTypeReferenceId='displayName' />
-        <OutputClaim ClaimTypeReferenceId='givenName' />
-        <OutputClaim ClaimTypeReferenceId='surname' />
-        <OutputClaim ClaimTypeReferenceId='email' />
-        <OutputClaim ClaimTypeReferenceId='objectId' PartnerClaimType='sub' />
-        <OutputClaim ClaimTypeReferenceId='identityProvider' />
-        <OutputClaim ClaimTypeReferenceId='tenantId' AlwaysUseDefaultValue='true' DefaultValue='{Policy:TenantObjectId}' />
+        <OutputClaim ClaimTypeReferenceId="displayName" />
+        <OutputClaim ClaimTypeReferenceId="givenName" />
+        <OutputClaim ClaimTypeReferenceId="surname" />
+        <OutputClaim ClaimTypeReferenceId="email" />
+        <OutputClaim ClaimTypeReferenceId="otherMails" PartnerClaimType="emails" />
+        <OutputClaim ClaimTypeReferenceId="objectId" PartnerClaimType="sub" />
+        <OutputClaim ClaimTypeReferenceId="identityProvider" />
+        <OutputClaim ClaimTypeReferenceId="tenantId" AlwaysUseDefaultValue="true" DefaultValue="{Policy:TenantObjectId}" />
       </OutputClaims>
       <SubjectNamingInfo ClaimType='sub' />
     </TechnicalProfile>
