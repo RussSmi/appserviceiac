@@ -36,6 +36,7 @@
         <OutputClaim ClaimTypeReferenceId='tenantId' PartnerClaimType='tid'/>
         <OutputClaim ClaimTypeReferenceId='givenName' PartnerClaimType='given_name' />
         <OutputClaim ClaimTypeReferenceId='surName' PartnerClaimType='family_name' />
+        <OutputClaim ClaimTypeReferenceId='signInNames.emailAddress' PartnerClaimType='email' />
         <OutputClaim ClaimTypeReferenceId='displayName' PartnerClaimType='name' />
         <OutputClaim ClaimTypeReferenceId='authenticationSource' DefaultValue='socialIdpAuthentication' AlwaysUseDefaultValue='true' />
         <OutputClaim ClaimTypeReferenceId='identityProvider' PartnerClaimType='iss' />

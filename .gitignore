@@ -7,3 +7,8 @@ actual.xml
 config.json
 msconfig.json
 bicep/main.dev.parameters.single.json
+bicep/main.dev.parameters.single.anusha.json
+bicep/b2c/rusmithb2c.onmicrosoft.com-B2C_1A_IDP_AAD_CUSTOMER9.xml
+bicep/b2c/rusmithb2c.onmicrosoft.com-B2C_1A_IDP_AAD_CUSTOMER8.xml
+bicep/b2c/rusmithb2c.onmicrosoft.com-B2C_1A_TRUSTFRAMEWORKBASE.xml
+bicep/b2c/rusmithb2c.onmicrosoft.com-B2C_1A_TRUSTFRAMEWORKEXTENSIONS.xml
